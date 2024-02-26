@@ -96,7 +96,7 @@ int main(){
     a->prev=head;
     a->next=b;
     b->prev=a;
-
+     
     Insert_at_Head(head,tail,500);
    insert_at_any_Position(head,2,100);
    Insert_at_Tail(tail,200);
@@ -113,6 +113,7 @@ int main(){
    cout<<endl;
    ReverseLinkList(tail); 
    cout<<endl;
+
 
    cout<<" Delete Head"<<endl;
    DeleteHead(head);
