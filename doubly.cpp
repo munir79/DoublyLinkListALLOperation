@@ -71,6 +71,14 @@ void DeleteFrom_at_any_Position(Node *head,int pos){
     delete DeleteNode;
 }
 
+void DeleteHead(Node *&head){
+   
+    Node *DeleteHead=head;
+    head=head->next;
+    delete DeleteHead;
+    head->prev=NULL; 
+
+}
 
 int main(){
     Node *head=new Node(10);
@@ -98,6 +106,12 @@ int main(){
    printLinkList(head);
    cout<<endl;
    ReverseLinkList(tail); 
- 
+   cout<<endl;
+  cout<<" Delete Head"<<endl;
+  DeleteHead(head);
+  printLinkList(head);
+  cout<<endl;
+  ReverseLinkList(tail);
 
-}
+
+} 
